@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- COMMANDS: close-intent synonyms (aliases run the identical ritual, never new commands).
+- 04: gate discovery (detect locked gate once per stack, record it).
 - 02-boot: bounded reads (snapshot + newest row first, third doc needs a reason, whole history never).
 - 01/03: conditional doc updates (PROGRESS + log always; others only when their subject changed).
 - 03: verified gate at close (run locked gate, record command + PASS/FAIL).

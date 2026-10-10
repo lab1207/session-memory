@@ -15,6 +15,7 @@ Each row = action + expected proof (log line AND visible change) + safety note i
 - Group by phase/day in build order. Tick only on verified proof, never on "looks fine".
 - Keep a **re-test section**: rows once trusted-but-unproven get one line each with exact proof needed. Start capture before the first action, not mid-test.
 - After every run: tick boxes, note evidence names, move FAILs to the problem ledger (05).
+- Name the locked gate once per stack (lockfile → package runner; `pyproject`/`requirements` → pytest; `go.mod` → go test; `Cargo.toml` → cargo test; else ask) and record it — "run the gate" is unactionable until the command is written down.
 
 ## Running (any surface)
 
@@ -22,3 +23,7 @@ Each row = action + expected proof (log line AND visible change) + safety note i
 2. Per step: act → capture (log tail + current screenshot/dump) → assert BOTH expected line AND visible change → record PASS/FAIL/HANDOFF in RESULT.md.
 3. FAIL → failure protocol (06 § Failure): freeze + capture, classify A/B/C/D, never reclassify silently.
 4. Close: RESULT complete (one line per step + artifacts), evidence pruned (keepers only), toggles/data restored, summary → PROGRESS.
+
+## Lessons
+
+1. **Gate discovery.** "Run the locked gate" is unactionable when nobody knows which command it is. Cost: skipped verification on new projects. Rule: detect once per stack, record it as the locked gate, never guess twice.

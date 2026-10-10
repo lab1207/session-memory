@@ -2,7 +2,7 @@
 
 ## 1. `stop` — end today's session
 
-> You say: **stop**
+> You say: **stop** (or `save everything` / `we stop here` / `end session` / `wrap up` — same ritual, aliases never new commands)
 
 AI does (`03-close.md` in order, no skipping):
 
@@ -20,3 +20,7 @@ AI does (`02-boot.md` in order):
 1. Reads PLAN → PROGRESS → pointed trackers; checks branch, last commits, `origin/main..main`, status per repo.
 2. Replies short: location (path + branch + commit) → status (snapshot + 3–5 bullets) → Next up verbatim → clean/dirty per repo.
 3. Continues from Next up. Never re-asks decided things.
+
+## Lessons
+
+1. **Close-intent synonyms.** Close intent arrives in many phrases; firing only on exact `stop` lets sessions end dirty. Cost: unclosed sessions, unpushed work. Rule: `save everything`, `we stop here`, `end session`, `wrap up` run the identical ritual � aliases, never new commands.
