@@ -1,8 +1,8 @@
-# ai-session-memory
+# smaa
 
 > Today stops clean. Tomorrow asks "where we are" and continues.
 
-[![MIT license](https://img.shields.io/badge/license-MIT-4c4330?style=flat-square)](LICENSE) [![release](https://img.shields.io/github/v/release/lab1207/ai-session-memory?style=flat-square)](https://github.com/lab1207/ai-session-memory/releases) [![issues](https://img.shields.io/github/issues/lab1207/ai-session-memory?style=flat-square)](https://github.com/lab1207/ai-session-memory/issues)
+[![MIT license](https://img.shields.io/badge/license-MIT-4c4330?style=flat-square)](LICENSE) [![release](https://img.shields.io/github/v/release/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/releases) [![issues](https://img.shields.io/github/issues/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/issues)
 
 **Two commands. Any project. Zero re-asking.**
 
@@ -11,7 +11,7 @@
 ## Quick start
 
 ```
-1. Clone ai-session-memory next to your project.
+1. Clone smaa next to your project.
 2. Paste AI_PROMPT.md into a fresh AI session.
 3. Say "where we are" to resume — "stop" when done.
 ```
