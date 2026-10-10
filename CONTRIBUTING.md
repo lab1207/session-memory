@@ -27,13 +27,14 @@
 4. **Generic or rejected:** no project/app/website names, no descriptions of what any project does, no device serials, numbers, tokens, screenshots, logs.
 5. **`CHANGELOG.md` line** in the same PR under Unreleased.
 
-## No names, ever (privacy rule)
+## No names, ever — HARD RULE (privacy, not promotion)
 
-Users' projects are mostly private — so this skill must never carry them:
+This skill is a tool, not promotion — no project credits anywhere, ever. A name merged once leaks forever, and most users' projects are private:
 
 - No app/website/project names in files, examples, commit messages, or PR titles/bodies. Write "a private project", "the app", "the site" — never the real name.
 - No descriptions of what a project does ("a dialer that…", "a shop that…"). Mechanism + rule only.
 - Same bar for maintainers: every commit message gets the no-names check before push. History is public forever — a name merged once leaks forever.
+- Violations are reverted on sight, no discussion — this rule protects people's private work, not wording taste.
 6. **Guides stay current:** if the lesson changes daily flow, update the guide it affects (lessons live in their file, rules live in their guide) — same PR.
 
 ## Review (maintainer merges when)
