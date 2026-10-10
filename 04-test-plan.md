@@ -18,7 +18,11 @@ Each row = action + expected proof (log line AND visible change) + safety note i
 
 ## Running (any surface)
 
-1. Prep session (env up, tunnel/dev-server healthy, state clean) → begin top-to-bottom, in order.
+1. Prep session (env up, tunnel/dev-server healthy, state clean) → begin top-to-bottom, in order. Rented GPUs/live endpoints: request only when the run is fully queued, release the moment live work ends — never hold paid hardware on standby.
 2. Per step: act → capture (log tail + current screenshot/dump) → assert BOTH expected line AND visible change → record PASS/FAIL/HANDOFF in RESULT.md.
 3. FAIL → failure protocol (06 § Failure): freeze + capture, classify A/B/C/D, never reclassify silently.
 4. Close: RESULT complete (one line per step + artifacts), evidence pruned (keepers only), toggles/data restored, summary → PROGRESS.
+
+## Lessons
+
+1. **Paid hardware.** Holding rented GPUs/live endpoints on standby burns money for zero work. Cost: meter running between sessions. Rule: request the endpoint only when the run is fully queued; say "stop the machine" when live work ends.
