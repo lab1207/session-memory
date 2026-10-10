@@ -68,15 +68,17 @@ New-Item -ItemType Junction -Path ~/.claude/skills/smaa -Target ~/smaa
 
 ## Works with
 
-Any harness following the Agent Skills spec (`SKILL.md` + `name`/`description` frontmatter). Verified paths:
+One open format ([Agent Skills spec](https://agentskills.io)): the same `SKILL.md` works across 27+ agents. Link the clone where yours looks:
 
 | Harness | Link the clone to | Notes |
 |---|---|---|
 | OpenCode | `~/.config/opencode/skills/smaa` | Global — all projects; `/skill` lists it |
 | Claude Code, Cursor, compatible CLIs | `~/.claude/skills/smaa` | Same layout, zero extra setup |
+| OpenAI Codex | `~/.codex/skills/smaa` (global) or `./.codex/skills/smaa` (project) | Same file, Codex path |
+| Others (Gemini CLI, Copilot, Windsurf, Amp, Roo, Goose, Cline, Continue…) | Per-agent skills dir | Same file — see your agent's skills docs or a registry like [skills.sh](https://skills.sh) |
 | Project-local (any) | `<project>/.opencode/skills/smaa` or `<project>/.claude/skills/smaa` | Checked in with the project instead of global |
 
-![OpenCode](https://img.shields.io/badge/OpenCode-global-5c4ee5?style=flat-square) ![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-d97757?style=flat-square) ![Cursor](https://img.shields.io/badge/Cursor-compatible-083fa1?style=flat-square)
+![OpenCode](https://img.shields.io/badge/OpenCode-global-5c4ee5?style=flat-square) ![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-d97757?style=flat-square) ![Cursor](https://img.shields.io/badge/Cursor-compatible-083fa1?style=flat-square) ![Codex](https://img.shields.io/badge/Codex-compatible-10a37f?style=flat-square)
 
 ## FAQ
 
