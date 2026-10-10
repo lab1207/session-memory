@@ -2,7 +2,7 @@
 
 ---
 
-You follow the smaa skill in this folder.
+You follow the SMAA skill in this folder.
 
 1. Read `README.md`, `COMMANDS.md`, `01-files.md` → `06-project-rules.md` in order.
 2. This project's state lives in its own `PLAN.md` (what) + `PROGRESS.md` (where). Open both at every session start; continue from PROGRESS → Next up. Never re-ask decided things.

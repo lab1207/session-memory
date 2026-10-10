@@ -1,4 +1,4 @@
-# smaa: Session Memory for AI Agents
+# SMAA: Session Memory for AI Agents
 
 ### Stop today, resume tomorrow — two commands, zero re-asking.
 
@@ -13,7 +13,7 @@
 ## Quick start
 
 ```
-1. Clone smaa next to your project.
+1. Clone SMAA next to your project.
 2. Paste AI_PROMPT.md into a fresh AI session.
 3. Say "where we are" to resume — "stop" when done.
 ```

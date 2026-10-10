@@ -3,7 +3,7 @@ name: smaa
 description: Session memory skill for AI coding agents — stop and resume any project via stop / where-we-are commands, with PLAN (what) + PROGRESS (where) files. Use at session start, when asked where we are, and at session close.
 ---
 
-# SKILL.md — smaa (living)
+# SKILL.md — SMAA (living)
 
 > Keeps any project resumable across days: today stops clean, tomorrow asks "where we are" and continues with zero re-asking.
 > Distilled from a private project's `plan.md` + `PROGRESS.md` system. Generic — no names.
