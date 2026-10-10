@@ -1,6 +1,6 @@
 # 03 — Close (every session)
 
-1. Update `PROGRESS.md` FIRST: new snapshot date, move finished → Done, set fresh Next up, append session-log row (date + what happened + evidence names), tick checklists.
+1. Update `PROGRESS.md` FIRST: new snapshot date, move finished → Done, set fresh Next up, append session-log row (date + what happened + evidence names), tick checklists. Leave untouched docs untouched.
 2. Update pointed trackers (tests ticked, UI/backend/problems verdicts). One line per result with artifact names — "it failed" without evidence doesn't count.
 3. Commit + push EVERY repo the project owns (code repo + state repo). A commit alone stays on one disk — only the push is backup. Code sessions push both; docs-only sessions still push state.
 4. Verify close: in EACH repo `git log --oneline origin/main..main` prints **0**. If N > 0, push again.
