@@ -1,6 +1,14 @@
 # Changelog
 
+All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). Scheme: MAJOR = command or file-contract change (consumers must adapt), MINOR = new lesson/guide/template (drop-in), PATCH = wording/fix with no behavior change. Each release ships GitHub Release notes.
+
 ## Unreleased
+
+(nothing yet)
+
+## [1.0.0] - 2026-10-10
+
+First release: the whole skill as it stands.
 
 - COMMANDS: close-intent synonyms (aliases run the identical ritual, never new commands).
 - 04: gate discovery (detect locked gate once per stack, record it).
