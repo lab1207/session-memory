@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- 01/03: zip-if-changed for unpushable dirs (fingerprint vs baseline; NO ZIP when identical).
 - 02-boot: bounded reads (snapshot + newest row first, third doc needs a reason, whole history never).
 - 01/03: conditional doc updates (PROGRESS + log always; others only when their subject changed).
 - 03: verified gate at close (run locked gate, record command + PASS/FAIL).
