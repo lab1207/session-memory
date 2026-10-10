@@ -13,6 +13,7 @@
 [![issues](https://img.shields.io/github/issues/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/issues)
 [![skill](https://img.shields.io/badge/skill-SMAA-5c4ee5?style=flat-square)](#use-as-an-agent-skill)
 [![docs](https://img.shields.io/badge/docs-Markdown-083fa1?style=flat-square)](#how-it-works)
+[![stars](https://img.shields.io/github/stars/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/stargazers)
 
 [Quick start](#quick-start) · [Commands](#commands-only-2) · [How it works](#how-it-works) · [Install](#install) · [FAQ](#faq) · [Contributing](#contributing)
 
