@@ -1,12 +1,14 @@
-# smaa
+# smaa: Session Memory for AI Agents
 
-> Today stops clean. Tomorrow asks "where we are" and continues.
+### Stop today, resume tomorrow — two commands, zero re-asking.
+
+**Say "stop" to close clean. Say "where we are" to continue — on any project.**
 
 [![MIT license](https://img.shields.io/badge/license-MIT-4c4330?style=flat-square)](LICENSE) [![release](https://img.shields.io/github/v/release/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/releases) [![issues](https://img.shields.io/github/issues/lab1207/smaa?style=flat-square)](https://github.com/lab1207/smaa/issues)
 
-**Two commands. Any project. Zero re-asking.**
+[Quick start](#quick-start) · [Commands](#commands-only-2) · [How it works](#how-it-works) · [FAQ](#faq)
 
-[Commands](#commands-only-2) · [Quick start](#quick-start) · [How it works](#how-it-works) · [FAQ](#faq)
+`git clone https://github.com/lab1207/smaa`
 
 ## Quick start
 
