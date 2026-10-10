@@ -17,8 +17,10 @@ Rules:
 - Code repo (e.g. `MyApp/`): app source only. Its `.gitignore` excludes `testing/`, `metro.log`, build dirs. Raw evidence never committed.
 - State repo (workspace root): PLAN + PROGRESS + trackers + problem ledger only. Its `.gitignore` excludes every app folder (each app is its own repo) + reference/study folders.
 - Why separate: code history stays clean for builds; state history keeps full process record (decisions, test proof maps, lessons for future skills). Either can die without killing the other.
+- Unpushable dirs need zip-if-changed: baseline lives in the state repo as `<dir>-BASELINE.md` (the last fingerprint); fingerprint = `git status --porcelain -- <dir>` + `git log -1 --format=%H -- <dir>`; identical → NO ZIP; changed → zip to `<dir>-backup-<YYYY-MM-DD>.zip` excluding `.git node_modules runtime/logs secrets`, then refresh the baseline.
 - Both private, both pushed every session. Commit alone stays on one disk — only the push is backup.
 
 ## Lessons
 
 1. **Conditional updates.** Updating every doc every session rots docs with noise. Cost: stale words nobody trusts. Rule: PROGRESS + log always; others only when their subject changed.
+2. **Zip-if-changed.** Gitignored dirs die with the disk; zipping every session wastes uploads. Cost: lost floors or GBs of pointless zips. Rule: the procedure above — fixed baseline location, fingerprint command, and zip destination; NO ZIP when identical.
