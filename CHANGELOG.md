@@ -1,0 +1,8 @@
+# Changelog
+
+## Unreleased
+
+- Full-project audit: 04-test-plan + templates/TEST-PLAN, 05-problems + templates/PROBLEMS, 06-project-rules (scope/failure/versioned-truth/licensing/data/UI/evidence) — generic for app or website.
+- COMMANDS.md: only 2 commands (`stop` → close ritual, `where we are` → resume).
+- CONTRIBUTING.md: guardrails (one job, non-goals, PR rules, review checklist) so contributions can't dilute the skill.
+- LICENSE: MIT so anyone can use and contribute back.
