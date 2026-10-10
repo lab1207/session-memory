@@ -9,7 +9,7 @@
 ## Failure protocol (A/B/C/D)
 
 1. FREEZE & CAPTURE (log tail, screenshot/dump, last 200 lines; video if visual/timing).
-2. CLASSIFY: **A** app bug (fix code → rerun this step) · **B** environment (fix setup → rerun) · **C** needs human (Handoff Card, park step, continue rest) · **D** blocked (2 fails or input needed → record + report + move on).
+2. CLASSIFY: **A** app bug (fix code → rerun this step) · **B** environment (fix setup → rerun) · **C** needs human (Handoff Card, park step, continue rest) · **D** blocked (2 fails or input needed → record + report + move on). Name the blocker + the one remedy; a blocked run drops the retry offer — re-offering an identical doomed run looks frozen.
 
 ```
 HANDOFF #<n> — <step> [needed for: ...]
@@ -47,3 +47,7 @@ SAY:   what you saw — or nothing if logs already prove it
 
 - Logs primary (full session capture from START), structure/dump per step, screenshots sparingly (launch-proof / FAIL / final, ≤5 keepers). Rolling `current.png` overwritten; FAIL copies saved first. Video only for motion, deleted after judging. RESULT.md + session log are the record; raw captures are disposable and gitignored.
 - Never diagnose file/UI state from a single image read: cross-check bytes/hash + live structure; manifest/spec = intent source of truth.
+
+## Lessons
+
+1. **Named blockers.** An unclassified failure re-offers an identical doomed run, which looks frozen. Cost: retry loops that can never succeed. Rule: every failure gets a named blocker + one remedy; blocked runs print the remedy instead of a retry.
