@@ -54,13 +54,17 @@ Trackers hold detail, PROGRESS holds the verdict. Missing `SKILL-CONFIG.md` = de
 
 ## Use as an agent skill
 
-`SKILL.md` (with `name` + `description` frontmatter) is registry-readable. To install:
+`SKILL.md` (with `name` + `description` frontmatter) is registry-readable. Clone once, link everywhere:
 
 ```bash
-git clone https://github.com/lab1207/smaa ~/.claude/skills/smaa
+git clone https://github.com/lab1207/smaa ~/smaa
+# OpenCode (all projects): link into the global skills dir
+New-Item -ItemType Junction -Path ~/.config/opencode/skills/smaa -Target ~/smaa
+# Any Claude-compatible CLI: same into its skills dir
+New-Item -ItemType Junction -Path ~/.claude/skills/smaa -Target ~/smaa
 ```
 
-Claude-compatible agents pick it up from their skills directory; otherwise clone anywhere and point the AI at `AI_PROMPT.md`.
+(On macOS/Linux use `ln -s` instead of `New-Item`.) Junctions mean `git pull` in the clone updates every consumer — no copies to drift. Restart the agent session after linking; `/skill` then lists it. Claude-compatible agents (Claude Code, Cursor, others) read `~/.claude/skills/` with zero extra setup. Fallback without installing: clone anywhere and point the AI at `AI_PROMPT.md`.
 
 ## FAQ
 

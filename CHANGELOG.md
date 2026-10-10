@@ -4,7 +4,7 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 
 ## Unreleased
 
-(nothing yet)
+- README: registration know-how (global OpenCode + Claude-compatible junctions, restart note, no-drift updates).
 
 ## [1.1.0] - 2026-10-10
 
