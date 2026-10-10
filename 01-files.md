@@ -4,6 +4,7 @@
 - `PROGRESS.md` — WHERE we are: status snapshot (date), Done / In progress / Pending, **Next up** (the handoff), session log table, reminders. Updated EVERY session, before anything closes.
 - Optional per-topic trackers (create when topic first matters, not upfront): tests checklist, UI/design state, backend/data, problem ledger. Each owns its topic; PROGRESS points to them, never duplicates them.
 - Doc index (optional, grows late): one-line map of every doc + reusable artifacts. Exists to make future distillation trivial.
+- Project config (optional, only for foreign layouts): `SKILL-CONFIG.md` in project root overrides snapshot path, history path, and gate command (template: `templates/CONFIG.md`). Missing file = defaults (PROGRESS.md + discovered gate).
 
 Rules:
 

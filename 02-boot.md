@@ -2,7 +2,8 @@
 
 ## Boot (every session, in order)
 
-1. Read `PLAN.md` → read `PROGRESS.md` snapshot + newest session-log row only → read pointed trackers only (tests/UI/backend/problems as needed). Never re-read full history: a third doc needs a stated reason.
+0. Read `SKILL-CONFIG.md` if present; resolve snapshot path, history path, gate command (missing file = PROGRESS.md + discovered gate). All steps below use the resolved paths.
+1. Read `PLAN.md` → read snapshot + newest history row only → read pointed trackers only (tests/UI/backend/problems as needed). Never re-read full history: a third doc needs a stated reason.
 2. Check git: branch, last 3 commits, `origin/main..main` count, short status (per owned repo).
 3. Continue from PROGRESS → **Next up**. Never re-ask decided things. If Next up is stale, say so and propose the correction.
 

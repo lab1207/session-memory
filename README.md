@@ -32,6 +32,7 @@ Issues and pull requests welcome — rules: `CONTRIBUTING.md` (one job, non-goal
 | `templates/PROGRESS.md` | Template: WHERE we are (updated every session) |
 | `templates/TEST-PLAN.md` | Template: WHAT to test |
 | `templates/PROBLEMS.md` | Template: problem ledger |
+| `templates/CONFIG.md` | Template: optional project config (foreign layouts) |
 | `CHANGELOG.md` | Version history |
 | `CONTRIBUTING.md` | Contribution guardrails (protects the skill's one job) |
 | `LICENSE` | MIT — use, modify, share freely |

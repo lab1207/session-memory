@@ -4,14 +4,15 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 
 ## Unreleased
 
+- Config for foreign layouts (01/02/03 + templates/CONFIG.md): optional SKILL-CONFIG.md overrides snapshot/history paths and gate command; missing = today's defaults. Push-rule/services deferred.
+- 04: metered-resources rule (request only when queued, release when done — no setup specifics).
 - 01/03: zip-if-changed with full procedure (baseline location, fingerprint command, zip destination, NO ZIP when identical).
+- COMMANDS: close-intent synonyms (aliases run the identical ritual, never new commands).
+- 04: gate discovery (detect locked gate once per stack, record it).
 
 ## [1.0.0] - 2026-10-10
 
 First release: the whole skill as it stands.
-
-- COMMANDS: close-intent synonyms (aliases run the identical ritual, never new commands).
-- 04: gate discovery (detect locked gate once per stack, record it).
 - 02-boot: bounded reads (snapshot + newest row first, third doc needs a reason, whole history never).
 - 01/03: conditional doc updates (PROGRESS + log always; others only when their subject changed).
 - 03: verified gate at close (run locked gate, record command + PASS/FAIL).
