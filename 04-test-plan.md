@@ -15,6 +15,7 @@ Each row = action + expected proof (log line AND visible change) + safety note i
 - Group by phase/day in build order. Tick only on verified proof, never on "looks fine".
 - Keep a **re-test section**: rows once trusted-but-unproven get one line each with exact proof needed. Start capture before the first action, not mid-test.
 - After every run: tick boxes, note evidence names, move FAILs to the problem ledger (05).
+- Name the locked gate once per stack (lockfile → package runner; `pyproject`/`requirements` → pytest; `go.mod` → go test; `Cargo.toml` → cargo test; else ask) and record it — "run the gate" is unactionable until the command is written down.
 
 ## Running (any surface)
 
@@ -26,3 +27,4 @@ Each row = action + expected proof (log line AND visible change) + safety note i
 ## Lessons
 
 1. **Paid hardware.** Holding rented GPUs/live endpoints on standby burns money for zero work. Cost: meter running between sessions. Rule: request the endpoint only when the run is fully queued; say "stop the machine" when live work ends.
+2. **Gate discovery.** "Run the locked gate" is unactionable when nobody knows which command it is. Cost: skipped verification on new projects. Rule: detect once per stack, record it as the locked gate, never guess twice.
