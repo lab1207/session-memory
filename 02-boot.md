@@ -2,7 +2,7 @@
 
 ## Boot (every session, in order)
 
-1. Read `PLAN.md` → read `PROGRESS.md` → read pointed trackers only (tests/UI/backend/problems as needed).
+1. Read `PLAN.md` → read `PROGRESS.md` snapshot + newest session-log row only → read pointed trackers only (tests/UI/backend/problems as needed). Never re-read full history: a third doc needs a stated reason.
 2. Check git: branch, last 3 commits, `origin/main..main` count, short status (per owned repo).
 3. Continue from PROGRESS → **Next up**. Never re-ask decided things. If Next up is stale, say so and propose the correction.
 
@@ -16,3 +16,7 @@ Verify by execution, then answer short:
 4. Clean/dirty: `origin/main..main` = N per repo + untracked notable files.
 
 Format: location → status → next → git. Facts only, no praise. Reference files as `path:line` when citing.
+
+## Lessons
+
+1. **Bounded reads.** A boot that re-reads full history plus every tracker burns context and re-surfaces decided things. Cost: slow boots, re-asked questions. Rule: snapshot + newest log row first, third doc only with a stated reason, whole history never.
