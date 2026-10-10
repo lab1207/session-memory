@@ -5,6 +5,7 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 ## Unreleased
 
 - 01/03: zip-if-changed with full procedure (baseline location, fingerprint command, zip destination, NO ZIP when identical).
+- 04: metered-resources rule (request only when queued, release when done — no setup specifics).
 
 ## [1.0.0] - 2026-10-10
 
