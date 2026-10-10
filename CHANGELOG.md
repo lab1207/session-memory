@@ -4,6 +4,12 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 
 ## Unreleased
 
+(nothing yet)
+
+## [1.1.0] - 2026-10-10
+
+Five drop-in additions, fully backward compatible.
+
 - Config for foreign layouts (01/02/03 + templates/CONFIG.md): optional SKILL-CONFIG.md overrides snapshot/history paths and gate command; missing = today's defaults. Push-rule/services deferred.
 - 04: metered-resources rule (request only when queued, release when done — no setup specifics).
 - 01/03: zip-if-changed with full procedure (baseline location, fingerprint command, zip destination, NO ZIP when identical).
