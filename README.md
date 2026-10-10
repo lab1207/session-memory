@@ -66,6 +66,18 @@ New-Item -ItemType Junction -Path ~/.claude/skills/smaa -Target ~/smaa
 
 (On macOS/Linux use `ln -s` instead of `New-Item`.) Junctions mean `git pull` in the clone updates every consumer — no copies to drift. Restart the agent session after linking; `/skill` then lists it. Claude-compatible agents (Claude Code, Cursor, others) read `~/.claude/skills/` with zero extra setup. Fallback without installing: clone anywhere and point the AI at `AI_PROMPT.md`.
 
+## Works with
+
+Any harness following the Agent Skills spec (`SKILL.md` + `name`/`description` frontmatter). Verified paths:
+
+| Harness | Link the clone to | Notes |
+|---|---|---|
+| OpenCode | `~/.config/opencode/skills/smaa` | Global — all projects; `/skill` lists it |
+| Claude Code, Cursor, compatible CLIs | `~/.claude/skills/smaa` | Same layout, zero extra setup |
+| Project-local (any) | `<project>/.opencode/skills/smaa` or `<project>/.claude/skills/smaa` | Checked in with the project instead of global |
+
+![OpenCode](https://img.shields.io/badge/OpenCode-global-5c4ee5?style=flat-square) ![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-d97757?style=flat-square) ![Cursor](https://img.shields.io/badge/Cursor-compatible-083fa1?style=flat-square)
+
 ## FAQ
 
 <details>
