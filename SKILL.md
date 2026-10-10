@@ -1,6 +1,6 @@
 ---
 name: session-memory
-description: Reusable session memory for any project — boot, where-we-are, and close with PLAN (what) + PROGRESS (where). Use at session start, when asked where we are, and at session close.
+description: Session memory skill for AI coding agents — stop and resume any project via stop / where-we-are commands, with PLAN (what) + PROGRESS (where) files. Use at session start, when asked where we are, and at session close.
 ---
 
 # SKILL.md — session-memory (living)
