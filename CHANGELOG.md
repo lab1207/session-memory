@@ -4,7 +4,7 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 
 ## Unreleased
 
-(nothing yet)
+- README: ponytail-style structure (logo + flow diagram, INSTALL.md per-agent, tight topics).
 
 ## [2.0.0] - 2026-10-10
 

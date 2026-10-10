@@ -1,5 +1,7 @@
 <div align="center">
 
+![SMAA logo](assets/logo.svg)
+
 # SMAA: Session Memory for AI Agents
 
 ### Stop today, resume tomorrow — two commands, zero re-asking.
@@ -12,7 +14,7 @@
 [![skill](https://img.shields.io/badge/skill-SMAA-5c4ee5?style=flat-square)](#use-as-an-agent-skill)
 [![docs](https://img.shields.io/badge/docs-Markdown-083fa1?style=flat-square)](#how-it-works)
 
-[Quick start](#quick-start) · [Commands](#commands-only-2) · [How it works](#how-it-works) · [FAQ](#faq) · [Contributing](#contributing)
+[Quick start](#quick-start) · [Commands](#commands-only-2) · [How it works](#how-it-works) · [Install](#install) · [FAQ](#faq) · [Contributing](#contributing)
 
 <code>git clone https://github.com/lab1207/smaa</code>
 
@@ -45,6 +47,8 @@ Detail: `COMMANDS.md`. Aliases run the identical ritual — never new commands.
 
 ## How it works
 
+![stop → snapshot + push → where we are → continue](assets/flow.svg)
+
 | File | Job | Changes |
 |---|---|---|
 | `PLAN.md` | WHAT we build | Rarely |
@@ -52,33 +56,9 @@ Detail: `COMMANDS.md`. Aliases run the identical ritual — never new commands.
 
 Trackers hold detail, PROGRESS holds the verdict. Missing `SKILL-CONFIG.md` = defaults. Full map: `SKILL.md`.
 
-## Use as an agent skill
+## Install
 
-`SKILL.md` (with `name` + `description` frontmatter) is registry-readable. Clone once, link everywhere:
-
-```bash
-git clone https://github.com/lab1207/smaa ~/smaa
-# OpenCode (all projects): link into the global skills dir
-New-Item -ItemType Junction -Path ~/.config/opencode/skills/smaa -Target ~/smaa
-# Any Claude-compatible CLI: same into its skills dir
-New-Item -ItemType Junction -Path ~/.claude/skills/smaa -Target ~/smaa
-```
-
-(On macOS/Linux use `ln -s` instead of `New-Item`.) Junctions mean `git pull` in the clone updates every consumer — no copies to drift. Restart the agent session after linking; `/skill` then lists it. Claude-compatible agents (Claude Code, Cursor, others) read `~/.claude/skills/` with zero extra setup. Fallback without installing: clone anywhere and point the AI at `AI_PROMPT.md`.
-
-## Works with
-
-One open format ([Agent Skills spec](https://agentskills.io)): the same `SKILL.md` works across 27+ agents. Link the clone where yours looks:
-
-| Harness | Link the clone to | Notes |
-|---|---|---|
-| OpenCode | `~/.config/opencode/skills/smaa` | Global — all projects; `/skill` lists it |
-| Claude Code, Cursor, compatible CLIs | `~/.claude/skills/smaa` | Same layout, zero extra setup |
-| OpenAI Codex | `~/.codex/skills/smaa` (global) or `./.codex/skills/smaa` (project) | Same file, Codex path |
-| Others (Gemini CLI, Copilot, Windsurf, Amp, Roo, Goose, Cline, Continue…) | Per-agent skills dir | Same file — see your agent's skills docs or a registry like [skills.sh](https://skills.sh) |
-| Project-local (any) | `<project>/.opencode/skills/smaa` or `<project>/.claude/skills/smaa` | Checked in with the project instead of global |
-
-![OpenCode](https://img.shields.io/badge/OpenCode-global-5c4ee5?style=flat-square) ![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-d97757?style=flat-square) ![Cursor](https://img.shields.io/badge/Cursor-compatible-083fa1?style=flat-square) ![Codex](https://img.shields.io/badge/Codex-compatible-10a37f?style=flat-square)
+One open format ([Agent Skills spec](https://agentskills.io)) — the same `SKILL.md` works across 27+ agents. Per-agent commands: **[INSTALL.md](INSTALL.md)** (OpenCode, Claude Code, Cursor, Codex, project-local).
 
 ## FAQ
 

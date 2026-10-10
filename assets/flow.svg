@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="120" viewBox="0 0 720 120">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888888"/>
+    </marker>
+  </defs>
+  <rect x="8" y="30" width="120" height="60" rx="12" fill="#111111"/>
+  <text x="68" y="65" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="20">stop</text>
+  <rect x="168" y="30" width="180" height="60" rx="12" fill="#1a1a1a" stroke="#444444"/>
+  <text x="258" y="57" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15">snapshot + push</text>
+  <text x="258" y="77" text-anchor="middle" fill="#888888" font-family="sans-serif" font-size="12">Next up saved</text>
+  <rect x="388" y="30" width="140" height="60" rx="12" fill="#111111"/>
+  <text x="458" y="65" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15">where we are</text>
+  <rect x="568" y="30" width="144" height="60" rx="12" fill="#0f8a4d"/>
+  <text x="640" y="65" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="20">continue</text>
+  <line x1="128" y1="60" x2="164" y2="60" stroke="#888888" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="348" y1="60" x2="384" y2="60" stroke="#888888" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="528" y1="60" x2="564" y2="60" stroke="#888888" stroke-width="2" marker-end="url(#a)"/>
+</svg>
