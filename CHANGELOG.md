@@ -4,7 +4,14 @@ All notable changes are released with a version tag (`v1.0.0`, `v1.1.0`, …). S
 
 ## Unreleased
 
-- README: registration know-how (global OpenCode + Claude-compatible junctions, restart note, no-drift updates).
+(nothing yet)
+
+## [2.0.0] - 2026-10-10
+
+Renamed skill `session-memory` → `smaa` (ID, repo, display) — consumers referencing the old ID must adapt. Plus:
+
+- README: rea-style centered header, collapsible FAQ, skill + docs badges, registration guide, Works-with matrix (27+ spec agents), SMAA display caps.
+- Repo renamed twice with full reference updates; history scrubbed name-free earlier and kept clean.
 
 ## [1.1.0] - 2026-10-10
 
