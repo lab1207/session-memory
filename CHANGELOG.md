@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- COMMANDS: close-intent synonyms (aliases run the identical ritual, never new commands).
 - COMMANDS: ambiguous-stop guard (bare stop asks first, full ritual only on explicit close).
 - 02-boot: bounded reads (snapshot + newest row first, third doc needs a reason, whole history never).
 - Full-project audit: 04-test-plan + templates/TEST-PLAN, 05-problems + templates/PROBLEMS, 06-project-rules (scope/failure/versioned-truth/licensing/data/UI/evidence) — generic for app or website.

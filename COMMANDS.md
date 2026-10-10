@@ -2,7 +2,7 @@
 
 ## 1. `stop` — end today's session
 
-> You say: **stop**
+> You say: **stop** (or `save everything` / `we stop here` / `end session` / `wrap up` — same ritual, aliases never new commands)
 
 Ambiguous bare `stop` (2 words or fewer, no object) may mean pause-output, not end-session — ask one confirming question first.
 
@@ -26,3 +26,4 @@ AI does (`02-boot.md` in order):
 ## Lessons
 
 1. **Ambiguous stop.** A bare `stop` sometimes means pause-output, not end-session; the full close on it wastes pushes and surprises. Cost: backup ritual fired by accident. Rule: 2 words or fewer with no object → one confirming question before the ritual.
+2. **Close-intent synonyms.** Close intent arrives in many phrases; firing only on exact `stop` lets sessions end dirty. Cost: unclosed sessions, unpushed work. Rule: `save everything`, `we stop here`, `end session`, `wrap up` run the identical ritual — aliases, never new commands.
