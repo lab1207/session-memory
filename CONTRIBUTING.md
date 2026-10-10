@@ -1,4 +1,4 @@
-# Contributing to session-memory
+# Contributing to ai-session-memory
 
 > This skill has one job: **today stops clean, tomorrow asks "where we are" and continues — for any project.**
 > Every contribution must serve that job. Anything else gets rejected, no matter how good it is alone.
